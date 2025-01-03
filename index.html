@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA BotConnect - Bots Automáticos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f3f4f6, #ffffff);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #007bff;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature {
+            flex: 1 1 calc(33% - 20px);
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        form input, form select, form button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f3f4f6;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Optimiza tu Negocio con IA BotConnect</h1>
+    <p>Automatiza la gestión de citas y atención al cliente con soluciones avanzadas y disponibles 24/7.</p>
+</header>
+
+<div class="container">
+    <section class="features">
+        <div class="feature">
+            <h3>Disponibilidad 24/7</h3>
+            <p>Tus clientes pueden reservar citas en cualquier momento, sin esperas.</p>
+        </div>
+        <div class="feature">
+            <h3>Gestión Simultánea</h3>
+            <p>Resuelve múltiples solicitudes al instante, sin estrés ni demoras.</p>
+        </div>
+        <div class="feature">
+            <h3>Accesibilidad Total</h3>
+            <p>Integra el bot en redes sociales y correo electrónico para mayor comodidad.</p>
+        </div>
+    </section>
+
+    <div class="cta">
+        <h2>¡Descubre el Futuro de la Atención al Cliente!</h2>
+        <button onclick="document.getElementById('form-section').scrollIntoView();">
+            Solicita tu Primer Servicio GRATIS
+        </button>
+    </div>
+
+    <section id="form-section" class="form-container">
+        <h2>Solicita tu Demostración Gratis</h2>
+        <form>
+            <input type="text" placeholder="Nombre Completo" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="text" placeholder="Nombre de tu Empresa" required>
+            <select required>
+                <option value="" disabled selected>Selecciona tu interés principal</option>
+                <option value="gestion_citas">Gestión de Citas</option>
+                <option value="soporte_basico">Soporte Básico</option>
+                <option value="ambos">Ambos Servicios</option>
+            </select>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>IA BotConnect © 2025 - Diego y Erik. Innovando para tu negocio.</p>
+</footer>
+
+</body>
+</html>
